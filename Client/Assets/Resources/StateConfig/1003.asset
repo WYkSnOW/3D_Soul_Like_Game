@@ -1,0 +1,1159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3dcba04094051b499afa9a3c04a7555, type: 3}
+  m_Name: 1003
+  m_EditorClassIdentifier: 
+  states:
+  - id: 1001
+    info: "1001_\u5F85\u673A"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1002
+    info: "1002_\u8DD1"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1003
+    info: "1003_\u75BE\u8DD1"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1005
+    info: "1005_\u666E\u653B1"
+    physicsConfig: []
+    objState: []
+    hitConfig:
+    - trigger: 0.15
+      end: 0.21
+      type: 0
+      begin: LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/WeaponRayHit
+      length: 1.3
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig:
+    - trigger: 0.15
+      frame: 3
+      triggerType: 1
+      trigger2: 0.3
+      lerp: 0
+    radialBlurConfigs: []
+  - id: 1006
+    info: "1006_\u666E\u653B2"
+    physicsConfig: []
+    objState: []
+    hitConfig:
+    - trigger: 0.15
+      end: 0.185
+      type: 0
+      begin: LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/WeaponRayHit
+      length: 1.3
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1007
+    info: "1007_\u666E\u653B3"
+    physicsConfig: []
+    objState: []
+    hitConfig:
+    - trigger: 0.11
+      end: 0.295
+      type: 0
+      begin: LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/WeaponRayHit
+      length: 1.3
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1008
+    info: "1008_\u666E\u653B4"
+    physicsConfig: []
+    objState: []
+    hitConfig:
+    - trigger: 0.18
+      end: 0.4
+      type: 0
+      begin: LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/WeaponRayHit
+      length: 1.3
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1009
+    info: "1009_\u6280\u80FD1"
+    physicsConfig: []
+    objState:
+    - info: 
+      trigger: 0.3
+      obj_id:
+      - Effect_SkillQ
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 0.9
+      obj_id:
+      - Effect_SkillQ
+      act: 0
+      force: 1
+      loop: 0
+    hitConfig:
+    - trigger: 0.38
+      end: 0.5
+      type: 1
+      begin: LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/WeaponBoxHit
+      length: 1.5
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs:
+    - trigger: 0.3
+      active: 1
+      lerp: 0.15
+    - trigger: 0.45
+      active: 0
+      lerp: 0.15
+  - id: 1010
+    info: "1010_\u6280\u80FD2"
+    physicsConfig: []
+    objState:
+    - info: 
+      trigger: 0.3
+      obj_id:
+      - Effect_SkillE
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 0.8
+      obj_id:
+      - Effect_SkillE
+      act: 0
+      force: 1
+      loop: 0
+    hitConfig:
+    - trigger: 0.14
+      end: 0.4
+      type: 0
+      begin: LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/WeaponRayHit
+      length: 1.3
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1011
+    info: "1011_\u6280\u80FD3"
+    physicsConfig: []
+    objState:
+    - info: 
+      trigger: 0.38
+      obj_id:
+      - Effect_SkillR
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 0.8
+      obj_id:
+      - Effect_SkillR
+      act: 0
+      force: 1
+      loop: 0
+    hitConfig:
+    - trigger: 0.13
+      end: 0.5
+      type: 0
+      begin: LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/WeaponRayHit
+      length: 1.3
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1012
+    info: "1012_\u6280\u80FD4"
+    physicsConfig: []
+    objState:
+    - info: 
+      trigger: 0.052
+      obj_id:
+      - Effect_SkillT1
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 0.143
+      obj_id:
+      - Effect_SkillT2
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 0.262
+      obj_id:
+      - Effect_SkillT3
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 0.37
+      obj_id:
+      - Effect_SkillT4
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 0.62
+      obj_id:
+      - Effect_SkillT5
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 1
+      obj_id:
+      - Effect_SkillT1
+      - Effect_SkillT2
+      - Effect_SkillT3
+      - Effect_SkillT4
+      - Effect_SkillT5
+      act: 0
+      force: 1
+      loop: 0
+    hitConfig:
+    - trigger: 0.25
+      end: 0.45
+      type: 0
+      begin: LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/WeaponRayHit
+      length: 1.3
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1013
+    info: "1013_\u683C\u6321\u8D77\u624B"
+    physicsConfig: []
+    objState:
+    - info: 
+      trigger: 0
+      obj_id:
+      - LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/weapon_box
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 1
+      obj_id:
+      - LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/weapon_box
+      act: 0
+      force: 1
+      loop: 0
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 10131
+    info: "10131_\u683C\u6321\u4FDD\u6301"
+    physicsConfig: []
+    objState:
+    - info: 
+      trigger: 0
+      obj_id:
+      - LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/weapon_box
+      act: 1
+      force: 0
+      loop: 0
+    - info: 
+      trigger: 1
+      obj_id:
+      - LowPoly_Cyc/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001
+        R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/weapon/weapon_box
+      act: 0
+      force: 1
+      loop: 0
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 10132
+    info: "10132_\u683C\u6321\u6536"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1014
+    info: "1014_\u7A81\u8FDB"
+    physicsConfig:
+    - trigger: 0
+      time: 0.8
+      force: {x: 0, y: 0, z: 13}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 2
+          outSlope: 2
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.36766914
+          value: 0.9900599
+          inSlope: 1.2646618
+          outSlope: 1.2646618
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1.0180817
+          value: 0.30142593
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 2
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs:
+    - trigger: 0
+      active: 1
+      lerp: 0.15
+    - trigger: 0.86
+      active: 0
+      lerp: 0.15
+  - id: 1015
+    info: "1015_\u53D7\u51FB"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1016
+    info: "1016_\u51FB\u5012"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1017
+    info: "1017_\u6B7B\u4EA1"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1018
+    info: "1018_\u8D77\u8EAB"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1019
+    info: "1019_\u84C4\u529B\u653B\u51FB"
+    physicsConfig:
+    - trigger: 0.3
+      time: 0.38
+      force: {x: 0, y: 0, z: 8}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 2
+          outSlope: 2
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1020
+    info: "1020_\u8DF3\u8DC3"
+    physicsConfig:
+    - trigger: 0.02
+      time: 0.7
+      force: {x: 0, y: 4, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 1
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1021
+    info: "1021_\u8DF3\u8DC3_\u4E0B\u843D"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: 0, y: -5, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 1
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1022
+    info: "1022_\u8DF3\u8DC3_\u7740\u5730"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1023
+    info: "1023_\u8DF3\u8DC3\u653B\u51FB1"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: 0, y: -1, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 1
+      stop_dst: 0
+    objState: []
+    hitConfig:
+    - trigger: 0.61
+      end: 0.95
+      type: 0
+      begin: LShinobi_full/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/Weapon_r/WeaponRayHit
+      length: 2
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1024
+    info: "1024_\u8DF3\u8DC3\u653B\u51FB2"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: 0, y: -1, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 1
+      stop_dst: 0
+    objState: []
+    hitConfig:
+    - trigger: 0.25
+      end: 0.95
+      type: 0
+      begin: LShinobi_full/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/Weapon_r/WeaponRayHit
+      length: 2
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1025
+    info: "1025_\u8DF3\u8DC3\u653B\u51FB3"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: 0, y: -1, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 1
+      stop_dst: 0
+    objState: []
+    hitConfig:
+    - trigger: 0.38
+      end: 0.82
+      type: 0
+      begin: LShinobi_full/root/pelvis/spine_01/spine_02/spine_03/clavicle_r/upperarm_r/lowerarm_r/hand_r/Weapon_r/WeaponRayHit
+      length: 2
+      hitObj: Effect/Blood
+      box_center: {x: 0, y: 0, z: 0}
+      box_size: {x: 0, y: 0, z: 0}
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 10021
+    info: "10021_\u8DD1\u8854\u63A5\u5F85\u673A"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 10031
+    info: "10031_\u75BE\u8DD1\u8854\u63A5\u5F85\u673A"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1026
+    info: "1026_\u524D_\u8D77\u8EAB"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1027
+    info: "1027_\u540E_\u8D77\u8EAB"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1028
+    info: "1028_\u524D_\u6B7B\u4EA1"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1029
+    info: "1029_\u540E_\u6B7B\u4EA1"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1030
+    info: "1030_\u88AB\u683C\u6321\u5F39\u53CD"
+    physicsConfig:
+    - trigger: 0
+      time: 0.5
+      force: {x: 0, y: 0, z: -2.5}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1031
+    info: "1031_\u683C\u6321\u6210\u529F"
+    physicsConfig: []
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1032
+    info: "1032_\u524D_\u8EB2\u95EA"
+    physicsConfig:
+    - trigger: 0
+      time: 0.8
+      force: {x: 0, y: 0, z: 7}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.31311476
+          value: 1.0388582
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7727853
+          value: 1.0154763
+          inSlope: -0.083560586
+          outSlope: -0.083560586
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1033
+    info: "1033_\u540E_\u8EB2\u95EA"
+    physicsConfig:
+    - trigger: 0
+      time: 0.8
+      force: {x: 0, y: 0, z: -7}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.31311476
+          value: 1.0388582
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7727853
+          value: 1.0154763
+          inSlope: -0.083560586
+          outSlope: -0.083560586
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1034
+    info: "1034_\u5DE6_\u8EB2\u95EA"
+    physicsConfig:
+    - trigger: 0
+      time: 0.8
+      force: {x: -7, y: 0, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.31311476
+          value: 1.0388582
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7727853
+          value: 1.0154763
+          inSlope: -0.083560586
+          outSlope: -0.083560586
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1035
+    info: "1035_\u53F3_\u8EB2\u95EA"
+    physicsConfig:
+    - trigger: 0
+      time: 0.8
+      force: {x: 7, y: 0, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.31311476
+          value: 1.0388582
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.7727853
+          value: 1.0154763
+          inSlope: -0.083560586
+          outSlope: -0.083560586
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1036
+    info: "1036_\u524D_\u8E31\u6B65"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: 0, y: 0, z: 1.7}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1037
+    info: "1037_\u540E_\u8E31\u6B65"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: 0, y: 0, z: -1.7}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1038
+    info: "1038_\u5DE6_\u8E31\u6B65"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: -1.7, y: 0, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1039
+    info: "1039_\u53F3_\u8E31\u6B65"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: 1.7, y: 0, z: 0}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1040
+    info: "1040_\u5DE6\u524D_\u8E31\u6B65"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: -1.7, y: 0, z: 1.7}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
+  - id: 1041
+    info: "1041_\u53F3\u524D_\u8E31\u6B65"
+    physicsConfig:
+    - trigger: 0
+      time: 1
+      force: {x: 1.7, y: 0, z: 1.7}
+      cure:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      ignore_gravity: 0
+      stop_dst: 0
+    objState: []
+    hitConfig: []
+    hitlagConfig: []
+    radialBlurConfigs: []
