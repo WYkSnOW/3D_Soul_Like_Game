@@ -1,0 +1,41 @@
+syntax = "proto3";
+option csharp_namespace = "Google.Protobuf.GS";
+
+message SaveInfoMain{
+    string scene=1;//所处的场景
+    SavePlayerInfo player=2;//主角的数据
+    map<int32,SaveGrildInfo> grilds=3;//背包信息
+}
+
+
+//关卡数据:可能包含多个AI 多个宝箱 关卡剩余的时间 多个计时器 
+message SaveLevelInfo{
+    map<string,SavePlayerInfo> ai=1;//AI
+    map<string,SaveChestInfo> chest=2;//宝箱
+
+    float time=3;//关卡剩余的时间
+    map<int32,SaveTimerInfo> timer=4;//计时器的状态 状态 剩余时间
+}
+
+message SavePlayerInfo{
+    int32 state=1;//状态
+    int32 hp=2;//当前的血量
+    repeated float pos=3;//当前的位置
+    repeated float rot=4;//当前的角度
+    bool active=5;//是否激活状态
+}
+
+message SaveGrildInfo{
+    int32 id=1;//格子ID
+    int32 propId=2;//道具ID
+    int32 count=3;//剩余的数量
+}
+
+message SaveChestInfo{
+    int32 state=1;//状态
+}
+
+message SaveTimerInfo{
+    int32 state=1;//状态
+    int32 time=2;//已经开始了多长时间
+}
